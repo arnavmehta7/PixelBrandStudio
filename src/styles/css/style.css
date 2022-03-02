@@ -181,17 +181,16 @@ overflow-x: hidden;
 section.mission.map {
     padding: 0px 0 100px;
 }
-.home-banner-commerce {
+/* .home-banner-commerce {
     background-image: url('../../assets/images/curves-1.jpg');
     width: 100%;
     text-align: left;
-    /* height: 70vh; */
     background-position: -40px 100%;
     background-size: 139%;
     background-color: #1d1e22;
     background-repeat: no-repeat;
     padding: 140px 0 70px;
-}
+} */
 
 .home-banner {
     background-image: url('../../assets/images/home-main-bg.jpg');
@@ -2454,10 +2453,40 @@ cocoen-component img {
 }
 }
 
-
+@media only screen and (min-width:992px){
+    .home-banner-commerce{
+    background-image: url('../../assets/images/curves-1.jpg');
+    width: 100%;
+    text-align: left;
+    /* height: 70vh; */
+    background-size: auto !important;
+    background-color: #1d1e22;
+    background-repeat: no-repeat;
+    padding: 140px 0 70px;
+    background-position: center;
+    background-size: cover;
+    }
+}
 
 
 @media only screen and (max-width: 992px) {
+
+    .home-banner-commerce.ecommerce {
+        background-size: 140%;
+        background-image: url('../../assets/images/curves-1.jpg');
+        /* width: 100%; */
+        text-align: left;
+        /* height: 70vh; */
+        /* background-size: auto !important; */
+        background-color: #1d1e22;
+        background-repeat: no-repeat;
+        padding: 140px 0 70px;
+        /* background-position: center; */
+        /* background-size: cover; */
+        background-position: -40px 100%;
+    }
+    
+
 	.acount-tabs-middle ul#pills-tab li.nav-item {
     margin: 0;
     flex: 0 0 49%;

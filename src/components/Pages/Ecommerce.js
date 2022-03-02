@@ -359,8 +359,7 @@ const Ecommerce = () => {
               <div className="right-content-upload">
                 <h6>Easily Remove</h6>
                 <h3>
-                  Background
-                  <br />
+                  Background <br />
                   from image
                 </h3>
                 <p>Powerful Background Remover</p>
