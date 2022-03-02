@@ -32,6 +32,20 @@ const Testimonial = () => {
 // SwiperCore.use([Navigation,Pagination,Scrollbar,A11y])
 
 
+// function RightCustomButton(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <button
+//       className={className}
+//       style={{...style }}
+//       onClick={onClick}>
+//         <div className="">
+//         <span className="">{">"}</span>
+//         </div>
+//       </button>
+//   );
+// }
+
 
 
 // let settings = {
@@ -156,7 +170,7 @@ const Testimonial = () => {
          {
           Data.map((n,i)=>{
             return(
-                <div className='px-2'>
+                <div className='px-2' key={i}>
                     <div className="d-flex justify-content-center">
                       <img className='author-img ' src={n.img}/>
                     </div>
