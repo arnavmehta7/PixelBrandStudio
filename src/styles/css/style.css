@@ -2690,6 +2690,13 @@ background-text {
 
 
 @media only screen and (max-width: 768px) {
+.background-text {
+        margin-top: 50px;
+        background-position: -21px 100;
+        background-size: 140%;
+        /* padding-top: 500px; */
+        background-color: #272829;
+    }
 .buy-button a:last-child {
     margin-bottom: 0;
 }
