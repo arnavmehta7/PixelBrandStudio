@@ -70,39 +70,8 @@ const Pricing = () => {
                 <h3>Pay as you go</h3>
 
                 <div className="list-subscribe-price">
-                  <div className="row">
-
-
-                    <div className="col-md-4">
-                      <input
-                        type="radio"
-                        className="pay-plans-radio"
-                        id="21-credits"
-                        name="pay_plan"
-                        value="21"
-                        price="80"
-                        per-image="0.8"
-                        checked=""
-                      />
-                      <label for="21-credits ">100 Photos </label>
-                    </div>
-
-
-                    <div className="col-md-4">£ 80</div>
-                    <div className="col-md-4">£ 0.8 / image</div>
-                  </div>
-                  <div className="row">
-				<div className="col-md-4">
-				<input type="radio" className="pay-plans-radio" id="20-credits" name="pay_plan" value="20" price="50" per-image="1" checked=""/>
-				<label for="20-credits">50 Photos </label>
-				</div>
-				<div className="col-md-4">
-				£ 50
-				</div>
-				<div className="col-md-4">
-				£ 1 / image
-				</div>
-				</div>
+                 
+       
 
 
 
@@ -151,10 +120,10 @@ const Pricing = () => {
                   <span>Frequently</span> asked questions
                 </h3>
               </div>
-              <div className="faq-contnet left">
+              <div className="faq-contnet left" style={{wordWrap:'break-word',whiteSpace:'normal'}}>
                 <div className="accordion" id="faq-questions">
                   <div className="card">
-                    <div className="card-header" id="heading-1">
+                    <div className="card-header" id="heading-1" style={{wordWrap:'break-word',whiteSpace:'normal'}}>
                       <button
                         className="btn btn-link btn-block text-left butn collapsed"
                         type="button"
@@ -162,6 +131,7 @@ const Pricing = () => {
                         data-target="#qs-1"
                         aria-expanded="true"
                         aria-controls="qs-1"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         Is it more preferable to get pay-as-you-go credits or
                         buy a subscription?{" "}
@@ -194,6 +164,7 @@ const Pricing = () => {
                         data-target="#qs-2"
                         aria-expanded="false"
                         aria-controls="qs-2"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         What are credits?
                       </button>
@@ -228,6 +199,7 @@ const Pricing = () => {
                         data-target="#qs-3"
                         aria-expanded="false"
                         aria-controls="qs-3"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         What images are supported?
                       </button>
@@ -255,6 +227,7 @@ const Pricing = () => {
                         data-target="#qs-4"
                         aria-expanded="false"
                         aria-controls="qs-4"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         What are preview images?
                       </button>
@@ -282,6 +255,7 @@ const Pricing = () => {
                         data-target="#qs-5"
                         aria-expanded="false"
                         aria-controls="qs-5"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         Can I cancel/upgrade/downgrade my subscription?
                       </button>
@@ -307,6 +281,7 @@ const Pricing = () => {
                         data-target="#qs-6"
                         aria-expanded="false"
                         aria-controls="qs-6"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         What if I'm unsatisfied with the results?
                       </button>
@@ -339,6 +314,7 @@ const Pricing = () => {
                         data-target="#qs-7"
                         aria-expanded="false"
                         aria-controls="qs-7"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         What happens if I don’t use all my subscription credits
                         each month?
@@ -369,6 +345,7 @@ const Pricing = () => {
                         data-target="#qs-8"
                         aria-expanded="false"
                         aria-controls="qs-8"
+                        style={{wordWrap:'break-word',whiteSpace:'normal'}}
                       >
                         What happens after I run out of credits?
                       </button>
