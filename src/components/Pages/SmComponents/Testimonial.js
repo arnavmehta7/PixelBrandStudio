@@ -1,13 +1,23 @@
 import React from "react";
-import {Swiper,SwiperSlide} from 'swiper/react';
-import SwiperCore,{Navigation,Pagination,Scrollbar,A11y } from 'swiper';
+// import {Swiper,SwiperSlide} from 'swiper/react';
+// import SwiperCore,{Navigation,Pagination,Scrollbar,A11y } from 'swiper';
 import temp from '../../../assets/images/client-1.png'
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
+
+
+
+// React-Slick
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 import img1 from '../../../assets/images/client-1.png'
 
 import img2 from '../../../assets/images/client-2.png'
@@ -19,7 +29,7 @@ import img4 from '../../../assets/images/client-4.png'
 // Add the style
 const Testimonial = () => {
 
-SwiperCore.use([Navigation,Pagination,Scrollbar,A11y])
+// SwiperCore.use([Navigation,Pagination,Scrollbar,A11y])
 
 
 
@@ -89,7 +99,48 @@ SwiperCore.use([Navigation,Pagination,Scrollbar,A11y])
    
   ];
 
+ var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint:780,
+          settings: {
+            slidesToShow:2,
+            slidesToScroll:2
+          }
 
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // initialSlide: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
 
   return (
     <div className="testimonial-section">
@@ -99,19 +150,76 @@ SwiperCore.use([Navigation,Pagination,Scrollbar,A11y])
         <h2 className="">Testimonial</h2>
       </div>
 
-    <div className='swiper-container'>
+
+
+      <Slider {...settings} className='mx-5' >
+         {
+          Data.map((n,i)=>{
+            return(
+                <div className='px-2'>
+                    <div className="d-flex justify-content-center">
+                      <img className='author-img ' src={n.img}/>
+                    </div>
+
+                <div className='testimonial-content'>
+                  <div className='author-name'
+                        style={{
+
+                          fontSize: '20px',
+                          fontWeight: 'bold',
+                          color:'#333333',
+                          marginTop: '10px'
+                        }}
+                    >
+                    {n.name}
+                  </div>
+                  <div  
+                  style={{
+                    fontSize:'16px',
+                      color: '#444444',
+                      fontStyle: 'italic',
+                      margin:'20px 0 0 0'
+                  }}    
+                  >
+                   " {n.text} "
+                  </div>
+                </div>
+
+                </div>
+              )
+          })
+         }
+
+
+      </Slider> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*    <div className='swiper-container'>
     <Swiper
       spaceBetween={50}
-      // slidesPerView='auto'
       slidesPerView={3}
       loop = {true}
       navigation
-
-      // pagination={{clickable:true}}
-      // scrollbar={{draggable:true}}
-      // onSlideChange={()=>console.log('change')}
-      // onSwiper={swiper=> console.log(swiper)}
-     
+    
     className='ml-5 pr-5 pl-5 mr-5'>
      
         {
@@ -138,7 +246,7 @@ SwiperCore.use([Navigation,Pagination,Scrollbar,A11y])
     
     </Swiper>
 
-    </div>
+    </div>*/}
     </div>
    
 
