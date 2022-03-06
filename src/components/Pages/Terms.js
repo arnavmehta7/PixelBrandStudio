@@ -1,7 +1,11 @@
+// import { useEffect } from 'react';
 import IMG from '../../assets/images/line.jpg'
-const Terms = () =>{
 
+const Terms = () =>{
+	window.scrollTo(0, 0)
+	// console.log('use Effected')
 return(
+
 <div>
     <section className="contactbar terms-block">
 	    <div className="container">

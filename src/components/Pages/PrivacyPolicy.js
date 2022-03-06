@@ -1,5 +1,6 @@
 import IMG from "../../assets/images/line.jpg";
 const PrivacyPolicy = () => {
+	window.scrollTo(0, 0)
   return (
     <div>
       <section className="contactbar terms-block">

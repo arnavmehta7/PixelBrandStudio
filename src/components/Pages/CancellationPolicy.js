@@ -2,6 +2,8 @@ import IMG from '../../assets/images/line.jpg'
 import {Link} from 'react-router-dom'
 
 const CancellationPolicy = () =>{
+	window.scrollTo(0, 0)
+
 return(
 <div>
 <section className="contactbar terms-block">
