@@ -32,13 +32,13 @@ html {
 }
 
 .privacy{
-    font-size: 18px !important;
+    /*font-size: 18px !important;*/
     text-align: left;
 
 }
 .termss p{
     /*font-family: Segoe, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;*/
-    font-weight: 100 !important;
+    /*font-weight: 100 !important;*/
     letter-spacing: 0.3px !important;
 
 
@@ -2051,6 +2051,7 @@ img {
 }
 .terms-content p {
     letter-spacing: 0px;
+    
     line-height: 25px;
     color: #4a5056;
     font-weight: 300;

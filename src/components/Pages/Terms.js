@@ -6,7 +6,7 @@ const Terms = () =>{
 	// console.log('use Effected')
 return(
 
-<div>
+<div className='terms-container'>
     <section className="contactbar terms-block">
 	    <div className="container">
 	        <h4><img src={IMG} />GENERAL</h4>
@@ -14,7 +14,7 @@ return(
 	    </div>
 	</section>
 	<section className="terms-content">
-	    <div className="container lft termss">
+	    <div className="container left termss">
 	        <h4>Preamble</h4>
 	        <p>
 	        	Pixelbrandstudio is operated by Kaleido AI GmbH which ensures the provision of the online software service. <br/>
